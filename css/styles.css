@@ -23,7 +23,7 @@ header{
 }
 
 .navbar_container{
-    background-color: rgb(45, 52, 96);
+    background-color: rgb(48, 63, 87);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,7 +31,7 @@ header{
 }
 
 .navbar{
-    background-color: brown;
+    background-color:  rgb(217, 94, 90);
     padding: 10px 20px;
 }
 
@@ -46,12 +46,12 @@ header{
 }
 
 .banner_container{
-    background-color: #F7C411;
+    background-color:  rgb(238, 146, 53);
     padding: 30px;
 }
 
 .banner_interior{
-    background-color: rgba(238, 227, 64, 0.85);
+    background-color: rgb(247, 216, 73);
     font-size: 40px;
     font-weight: 700; 
     text-align: left;
@@ -66,7 +66,7 @@ main{
 }
 
 .main_leftContainer{
-    background-color: grey;
+    background-color: rgb(78,78,104);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 30px;
@@ -78,17 +78,17 @@ main{
 }
 
 .articles{
-    background-color: rgb(86, 139, 185);
+    background-color: rgb(55, 106, 171);
     padding: 40px;
 }
 
 .article_nav{
-    background-color: rgb(116, 174, 228);
+    background-color: rgb(124, 161, 193);
     grid-column: span 2;
 }
 
 .main_rightContainer{
-    background-color: red;
+    background-color: rgb(227, 80, 87);
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ main{
 }
 
 .mainRight_publi{
-    background-color: #F7C411;
+    background-color: rgb(247, 216, 73);
     padding: 20px;
     text-align: center;
 }
@@ -108,7 +108,7 @@ footer{
 }
 
 .footer_container{
-    background-color: rgb(234, 231, 130);
+    background-color: rgb(238, 231, 151);
     text-align: left;
     padding: 30px;
 }
@@ -139,6 +139,27 @@ footer{
     .articles{
         width: 100%;
         padding: 20px;
+    }
+    
+    .main_rightContainer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px){
+    .navbar_container{
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .navbar_menu{
+        margin: 0;
+        text-align: left;
+    }
+
+    main{
+        flex-direction: column;
     }
     
     .main_rightContainer{
