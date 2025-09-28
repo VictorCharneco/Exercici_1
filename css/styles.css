@@ -1,6 +1,6 @@
 body{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
 }
 
@@ -66,16 +66,20 @@ main{
     padding: 10px 30px;
     width: 800px;
     height: 400px;
-    gap: 10px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
 }
 
 .articles{
     background-color: rgb(86, 139, 185);
+    padding: 40px;
 }
 
 .article_nav{
     background-color: rgb(116, 174, 228);
-    /* width:   TO DO*/
+    grid-column: span 2;
 }
 
 .main_rightContainer{
@@ -83,9 +87,27 @@ main{
     width: 250px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .mainRight_publi{
-    padding: 10px;
+    margin: 30px auto;
+    background-color: #F7C411;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.publiDos{
+    margin-top: -20px;
+}
+
+footer{
+    background-color: black;
+    padding: 30px;
+}
+
+.footer_container{
+    background-color: rgb(234, 231, 130);
+    text-align: left;
+    padding: 30px;
 }
