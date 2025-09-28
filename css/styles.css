@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     max-width: 1200px;
     margin: 40px auto;
@@ -21,7 +25,7 @@ header{
 .navbar_container{
     background-color: rgb(45, 52, 96);
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px;
 }
@@ -32,10 +36,12 @@ header{
 }
 
 .navbar_menu{
-    padding: 10px 350px;
+    flex-grow: 1;
+    margin: 0 20px;
+    text-align: center;
 }
 
-.navbar_logo, .navbar_social{
+.navbar_logo, .navbar_social, .navbar_menu{
     padding: 10px 40px;
 }
 
@@ -63,9 +69,8 @@ main{
     background-color: grey;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px 30px;
-    width: 800px;
-    height: 400px;
+    padding: 30px 30px;
+    flex-grow: 1;
     gap: 15px;
     align-items: center;
     justify-content: center;
@@ -88,17 +93,13 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 20px;
 }
 
 .mainRight_publi{
-    margin: 30px auto;
     background-color: #F7C411;
-    padding: 40px 50px;
+    padding: 20px;
     text-align: center;
-}
-
-.publiDos{
-    margin-top: -20px;
 }
 
 footer{
@@ -110,4 +111,38 @@ footer{
     background-color: rgb(234, 231, 130);
     text-align: left;
     padding: 30px;
+}
+
+@media (max-width: 768px){
+    .navbar_container{
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .navbar_menu{
+        margin: 0;
+        text-align: left;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    
+    .main_leftContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .articles{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .main_rightContainer{
+        width: 100%;
+    }
+
 }
