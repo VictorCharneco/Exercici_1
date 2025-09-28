@@ -1,0 +1,91 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.father_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbar_container{
+    background-color: rgb(45, 52, 96);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navbar{
+    background-color: brown;
+    padding: 10px 20px;
+}
+
+.navbar_menu{
+    padding: 10px 350px;
+}
+
+.navbar_logo, .navbar_social{
+    padding: 10px 40px;
+}
+
+.banner_container{
+    background-color: #F7C411;
+    padding: 30px;
+}
+
+.banner_interior{
+    background-color: rgba(238, 227, 64, 0.85);
+    font-size: 40px;
+    font-weight: 700; 
+    text-align: left;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: black;
+    padding: 30px;
+}
+
+.main_leftContainer{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 30px;
+    width: 800px;
+    height: 400px;
+    gap: 10px;
+}
+
+.articles{
+    background-color: rgb(86, 139, 185);
+}
+
+.article_nav{
+    background-color: rgb(116, 174, 228);
+    /* width:   TO DO*/
+}
+
+.main_rightContainer{
+    background-color: red;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainRight_publi{
+    padding: 10px;
+}
