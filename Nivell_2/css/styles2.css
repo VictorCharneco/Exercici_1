@@ -11,10 +11,15 @@ body{
 .father_container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 header{
+    background-image: url('/Users/vcb/Desktop/FullStack/Sprints/Sprint 1/Exercici_1/Nivell_2/images/header.jpg');
+    background-size: cover%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
     display: flex;
     padding: 30px;
     flex-direction: column;
@@ -22,9 +27,6 @@ header{
 }
 
 .navbar_container{
-    background-image: url('images/header.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -75,30 +77,32 @@ header{
 }
 
 .banner_container{
-    background-color:  rgb(238, 146, 53);
     padding: 30px;
+    justify-self: start;
 }
 
 .banner_interior{
-    background-color: rgb(247, 216, 73);
-    font-size: 40px;
+    background-color: rgb(216, 215, 215);
+    opacity: 0.8;;
+    color: rgb(222, 123, 105);
+    font-size: 20px;
     font-weight: 700; 
-    text-align: left;
+    text-align: center;
+    padding: 50px;
+    margin-top: 25px;
 }
 
 main{
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    background-color: black;
-    padding: 30px;
+    gap: 10px;
 }
 
 .main_leftContainer{
-    background-color: rgb(78,78,104);
+    background-color: rgb(216, 215, 215);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 30px 30px;
+    padding: 10px 10px;
     flex-grow: 1;
     gap: 15px;
     align-items: center;
@@ -107,17 +111,43 @@ main{
 }
 
 .articles{
-    background-color: rgb(55, 106, 171);
-    padding: 40px;
+    background-color: rgb(244,241,241);
+    padding: 10px;
+    max-height: 750px;
+    max-width: 400px;
 }
 
+.span_date{
+    position: relative;
+    left: 15px;
+    color: wheat;
+    font-weight: 700;;
+    bottom: 30px;
+}
 .article_nav{
     background-color: rgb(124, 161, 193);
     grid-column: span 2;
 }
 
+.articles h2{
+    background-color: rgb(225, 134,131);
+    color: white;
+    padding: 3px;
+}
+
+.article_description{
+    text-align: left;
+    column-count: 2;
+}
+
+.articles a{
+    text-decoration: none;
+    color: rgb(172, 169, 169);
+    margin-top: 20px;
+}
+
 .main_rightContainer{
-    background-color: rgb(227, 80, 87);
+    background-color: rgb(216, 215, 215);
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -125,10 +155,13 @@ main{
     padding: 20px;
 }
 
-.mainRight_publi{
-    background-color: rgb(247, 216, 73);
+.mainRight_publi, .article_nav{
+    background-color: rgb(216, 215, 215);
     padding: 20px;
     text-align: center;
+}
+.publi_title{
+    font-weight: 700;;
 }
 
 footer{
