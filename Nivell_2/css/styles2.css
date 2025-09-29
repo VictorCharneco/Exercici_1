@@ -16,20 +16,19 @@ body{
 
 header{
     background-image: url('/Users/vcb/Desktop/FullStack/Sprints/Sprint 1/Exercici_1/Nivell_2/images/header.jpg');
-    background-size: cover%;
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
     display: flex;
-    padding: 30px;
     flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .navbar_container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 30px;
 }
 
@@ -41,7 +40,7 @@ header{
     flex-grow: 1;
     margin: 0 20px;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,8 +76,11 @@ header{
 }
 
 .banner_container{
-    padding: 30px;
-    justify-self: start;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 30px;
 }
 
 .banner_interior{
@@ -89,7 +91,8 @@ header{
     font-weight: 700; 
     text-align: center;
     padding: 50px;
-    margin-top: 25px;
+    margin: 0 auto;
+    width: 60%;
 }
 
 main{
@@ -114,7 +117,14 @@ main{
     background-color: rgb(244,241,241);
     padding: 10px;
     max-height: 750px;
-    max-width: 400px;
+    width: 100%;
+}
+
+.articles img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .span_date{
@@ -127,23 +137,26 @@ main{
 .article_nav{
     background-color: rgb(124, 161, 193);
     grid-column: span 2;
+    max-width: 100%;
 }
 
 .articles h2{
     background-color: rgb(225, 134,131);
     color: white;
-    padding: 3px;
+    padding: 5px;
+    margin: 0 auto;
 }
 
-.article_description{
-    text-align: left;
+.article_description p{
     column-count: 2;
+    margin: 15px auto;
 }
 
 .articles a{
     text-decoration: none;
     color: rgb(172, 169, 169);
     margin-top: 20px;
+    display: block;
 }
 
 .main_rightContainer{
@@ -165,14 +178,16 @@ main{
 }
 
 footer{
-    background-color: black;
-    padding: 30px;
+    background-color: rgb(244,241,241);
+    border-left: 10px solid rgb(216, 215, 215);
+    border-right: 10px solid rgb(216, 215, 215);
+    padding: 10px;
 }
 
 .footer_container{
-    background-color: rgb(238, 231, 151);
-    text-align: left;
-    padding: 30px;
+    background-color: rgb(244, 241, 241);
+    text-align: center;
+    padding: 10px;
 }
 
 @media (max-width: 768px){
